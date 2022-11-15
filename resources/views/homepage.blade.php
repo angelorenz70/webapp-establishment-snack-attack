@@ -2,7 +2,7 @@
 
 @section('content')
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead" style="background-image: url('assets-homepage/assets/img/header-bg2.jpg')">
             <div class="container">
                 <div class="masthead-subheading">Welcome To Our Studio!</div>
                 <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
