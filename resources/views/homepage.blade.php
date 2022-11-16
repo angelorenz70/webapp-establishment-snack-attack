@@ -333,6 +333,12 @@
                     <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
                 </form>
             </div>
+            <!-- Google Map Start -->
+        <div div class="container-xxl pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+            <iframe class="w-100 mb-n2" style="height: 450px;"
+            src="https://maps.google.com/maps?q=butuan%20city,%20caraga%20state%20university&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
         </section>
         <!-- Footer-->
         <footer class="footer py-4">
