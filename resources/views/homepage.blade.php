@@ -9,11 +9,12 @@
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
             </div>
         </header>
-        
+
+        @include('page-parts.page-slogan')
         @include('page-parts.page-services')
         @include('page-parts.page-products')
         @include('page-parts.page-abouts')
-        @include('page-parts.page-teams')
+        @include('page-parts.page-owner')
 
         
         <!-- Clients-->
