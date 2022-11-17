@@ -17,8 +17,9 @@
         <link href="{{ asset('assets-homepage/css/styles.css')}}" rel="stylesheet" />
     </head>
     <body id="page-top">
-    @include('layouts.navbar')
-    @yield('content')
+        @include('layouts.navbar')
+        @yield('content')
+    
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
