@@ -2,10 +2,10 @@
 
 @section('content')
         <!-- Masthead-->
-        <header class="masthead" style="background-image: url('assets-homepage/assets/img/header-bg2.jpg')">
-            <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+        <header class="masthead" style="background-image: url('assets-homepage/assets/img/background.jpg')">
+            <div class="container bg-secondary opacity-75 pt-4 pb-4 rounded-3">
+                <div class="masthead-subheading text-warning">Welcome To Our Studio!</div>
+                <div class="masthead-heading text-uppercase text-warning">It's Nice To Meet You</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
             </div>
         </header>
