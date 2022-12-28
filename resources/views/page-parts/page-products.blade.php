@@ -6,7 +6,7 @@
             <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
         <div class="row">
-            <div class="col-lg-3 col-sm-6 mb-4">
+            <div class="col-lg-4 col-sm-6 mb-4">
                 <!-- Portfolio item 1-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6 mb-3">
+            <div class="col-lg-4 col-sm-6 mb-4">
                 <!-- Portfolio item 3-->
                 <div class="portfolio-item">
                     <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
