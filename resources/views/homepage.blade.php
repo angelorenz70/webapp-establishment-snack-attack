@@ -58,7 +58,7 @@
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Price:</strong>
-                                             55 pesos (ordinary) /
+                                             55 pesos (ordinary) <br>
                                              85 pesos (special)
 
                                         </li>
@@ -130,7 +130,7 @@
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Price:</strong>
-                                            50 pesos (original)/
+                                            50 pesos (original)<br>
                                             85 pesos (special)
                                         </li>
                                         <li>
@@ -166,8 +166,8 @@
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Price:</strong>
-                                             100 pesos (small)/
-                                             140 pesos (medium)/
+                                             100 pesos (small)<br>
+                                             140 pesos (medium)<br>
                                              190 pesos (largest)
                                         </li>
                                         <li>
@@ -203,8 +203,8 @@
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Price:</strong>
-                                             250 pesos (5 slices)/
-                                             300 pesos (7 slices) /
+                                             250 pesos (5 slices)<br>
+                                             300 pesos (7 slices) <br>
                                              450 pesos (9 slices)
                                         </li>
                                         <li>
@@ -240,8 +240,8 @@
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Price:</strong>
-                                             50 pesos (small)/
-                                             100 pesos (medium)/
+                                             50 pesos (small) <br>
+                                             100 pesos (medium)<br>
                                              150 pesos (largest)
                                         </li>
                                         <li>
