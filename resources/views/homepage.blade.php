@@ -54,7 +54,7 @@
                                     <h2 class="text-uppercase">Halo-halo</h2>
                                     <p class="item-intro text-muted">Taste, Enjoy, Remember!</p>
                                     <img class="img-fluid d-block mx-auto" src="assets-homepage/assets/img/portfolio/dis1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Halo-halo  is a filipino style shaved ice made with sweetend beans,fruits and jellies and topped with milk,leche flan, purple yam jam, and ice cream. It's a cold and refreshing treats you'll want year-round!</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Price:</strong>
