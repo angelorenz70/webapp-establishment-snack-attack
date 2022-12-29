@@ -162,7 +162,7 @@
                                     <h2 class="text-uppercase">Milk Tea</h2>
                                     <p class="item-intro text-muted">Taste, Enjoy, Remember!</p>
                                     <img class="img-fluid d-block mx-auto" src="assets-homepage/assets/img/portfolio/dis4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Milk tea, quite simply, is tea with milk added. This creates a smoother flavor and slightly sweetens the tea. It is a popular way to serve tea in many parts of the world, and it is an easy way to change up your average cup of tea.​ There are many regions in the world where milk tea is the default type of tea!</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Price:</strong>
@@ -199,7 +199,7 @@
                                     <h2 class="text-uppercase">Pizza</h2>
                                     <p class="item-intro text-muted">Taste, Enjoy, Remember!</p>
                                     <img class="img-fluid d-block mx-auto" src="assets-homepage/assets/img/portfolio/dis5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p> dish of Italian origin consisting of a flat, round base of dough baked with a topping of tomato sauce and cheese, typically with added meat or vegetables.!</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Price:</strong>
@@ -236,7 +236,7 @@
                                     <h2 class="text-uppercase">Mango Graham</h2>
                                     <p class="item-intro text-muted">Taste, Enjoy, Remember!</p>
                                     <img class="img-fluid d-block mx-auto" src="assets-homepage/assets/img/portfolio/dis6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Mango float or crema de mangga is a Filipino icebox cake dessert made with layers of ladyfingers or graham crackers, whipped cream, condensed milk, and ripe carabao mangoes. It is chilled for a few hours before serving, though it can also be frozen to give it an ice cream-like consistency!</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Price:</strong>
