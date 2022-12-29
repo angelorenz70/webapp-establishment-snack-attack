@@ -91,7 +91,7 @@
                                     <h2 class="text-uppercase">Noodles/Ramen</h2>
                                     <p class="item-intro text-muted">Taste, Enjoy, Remember!</p>
                                     <img class="img-fluid d-block mx-auto" src="assets-homepage/assets/img/portfolio/dis2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <p>Ramen has a softer texture and smoother feels. Ramen is served in a broth where as pasta usually comes with a sauce. Ramen is basically always cut into long strips,whether straight or wavy!</p>
                                     <ul class="list-inline">
                                         <li>
                                             <strong>Price:</strong>
@@ -167,7 +167,7 @@
                                         <li>
                                             <strong>Price:</strong>
                                              100 pesos (small)/
-                                             140 pesos (meduim)/
+                                             140 pesos (medium)/
                                              190 pesos (largest)
                                         </li>
                                         <li>
@@ -241,7 +241,7 @@
                                         <li>
                                             <strong>Price:</strong>
                                              50 pesos (small)/
-                                             100 pesos (meduim)/
+                                             100 pesos (medium)/
                                              150 pesos (largest)
                                         </li>
                                         <li>
