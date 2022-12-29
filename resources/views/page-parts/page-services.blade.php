@@ -18,7 +18,9 @@
                     <img class="img-fluid" src="assets-homepage/assets/img/serviceslogo/services2.png" alt="..." />
                 </span>
                 <h4 class="my-3">Walk-in</h4>
-                <p class="text-muted">visit any of our 4 Branches: Ochoa Avenue beside Breadwalk Bakeshop, Villanueva St.(LuxuryHotel), Ampayon Highway and Baan Km. 3 Corner Tiniwisan.</p>
+                <p class="text-muted">visit any of our 4 Branches: Ochoa Avenue beside Breadwalk Bakeshop, Villanueva St.(LuxuryHotel), Ampayon Highway and Baan Km. 3 Corner Tiniwisan.
+                    <a class="nav-link" href="{{ url('/') }}#map">Location</a>
+                </p>
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x mb-4">

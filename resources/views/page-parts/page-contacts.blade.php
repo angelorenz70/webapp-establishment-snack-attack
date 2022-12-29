@@ -62,9 +62,9 @@
         </form>
     </div>
     <!-- Google Map Start -->
-<div div class="container-xxl pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+<div div class="container pt-5 px-0 wow fadeIn" id="map" data-wow-delay="0.1s">
     <iframe class="w-100 mb-n2" style="height: 450px;"
-    src="https://maps.google.com/maps?q=butuan%20city,%20caraga%20state%20university&t=&z=13&ie=UTF8&iwloc=&output=embed"
+    src="https://maps.google.com/maps?q=Ampayon,%20snack%20attack&t=&z=13&ie=UTF8&iwloc=&output=embed"
         frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 </div>
 </section>
