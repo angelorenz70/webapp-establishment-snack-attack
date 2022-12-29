@@ -67,7 +67,7 @@
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        CLOSE PRODUCT
                                     </button>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        CLOSE PRODUCT
                                     </button>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        CLOSE PRODUCT
                                     </button>
                                 </div>
                             </div>
@@ -172,7 +172,7 @@
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        CLOSE PRODUCT
                                     </button>
                                 </div>
                             </div>
@@ -207,7 +207,7 @@
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        CLOSE PRODUCT
                                     </button>
                                 </div>
                             </div>
@@ -242,7 +242,7 @@
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
                                         <i class="fas fa-xmark me-1"></i>
-                                        Close Project
+                                        CLOSE PRODUCT
                                     </button>
                                 </div>
                             </div>
