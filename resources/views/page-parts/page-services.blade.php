@@ -10,8 +10,8 @@
                 <span class="fa-stack fa-4x mb-4">
                     <img class="img-fluid" src="assets-homepage/assets/img/serviceslogo/services1.png" alt="..." />
                 </span>
-                <h4 class="my-3">E-Commerce</h4>
-                <p class="text-muted">You can also check our store in lazada and shoppe @snackattackhouse.</p>
+                <h4 class="my-3">Online Delivery</h4>
+                <p class="text-muted">You may book your orders thru Maxim ,Food panda, Grab food. </p>
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x mb-4">
@@ -27,7 +27,9 @@
                     <img class="img-fluid" src="assets-homepage/assets/img/serviceslogo/services3.png" alt="..." />
                 </span>
                 <h4 class="my-3">Booking</h4>
-                <p class="text-muted">You may book your orders thru Maxim ,Food panda, Grab food.</p>
+                <p class="text-muted">Making a reservation of table at a restaurant can be done by phone (0916157500) and message in 
+                    <a class="nav-link" href="{{ url('https://www.facebook.com/snackattack007/?mibextid=ZbWKwL') }}" target="_blank">Snack Attack</a>
+                </p>
             </div>
         </div>
     </div>

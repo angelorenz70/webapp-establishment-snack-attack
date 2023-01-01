@@ -11,10 +11,9 @@
                     <img class="mx-auto rounded-circle" src="assets-homepage/assets/img/team/pic123.jpg" alt="..." />
                     <h4>Joann Suson Plaza</h4>
                     <p class="text-muted">Business Women </p>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/joannsusonplaza/?fbclid=IwAR1QHF9J7aNodtUWIDZnXtRWzHTBLt1UgUh07zLwrnCtj0XjIwuKeKZZLQA" target="_blank" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/profile.php?id=100008884598292" target="_blank" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn bgitn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn bgitn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fa-brands fa-facebook-messenger"></i></a>
                 </div>
             </div>
         </div>
