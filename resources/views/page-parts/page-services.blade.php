@@ -11,7 +11,7 @@
                     <img class="img-fluid" src="assets-homepage/assets/img/serviceslogo/services1.png" alt="..." />
                 </span>
                 <h4 class="my-3">E-Commerce</h4>
-                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                <p class="text-muted">You can also check our store in lazada and shoppe @snackattackhouse.</p>
             </div>
             <div class="col-md-4">
                 <span class="fa-stack fa-4x mb-4">
