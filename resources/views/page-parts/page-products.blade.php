@@ -16,8 +16,8 @@
                         <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis1.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">product1</div>
-                        <div class="portfolio-caption-subheading text-muted">Halo-halo</div>
+                        <div class="portfolio-caption-heading">Halo-halo</div>
+                        <div class="portfolio-caption-subheading text-muted">dessert</div>
                     </div>
                 </div>
             </div>
@@ -31,8 +31,8 @@
                         <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis2.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">product2</div>
-                        <div class="portfolio-caption-subheading text-muted">noodles</div>
+                        <div class="portfolio-caption-heading">noodles</div>
+                        <div class="portfolio-caption-subheading text-muted">grains</div>
                     </div>
                 </div>
             </div>
@@ -46,8 +46,8 @@
                         <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis3.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">product3</div>
-                        <div class="portfolio-caption-subheading text-muted">Ham&Egg Sandwhich</div>
+                        <div class="portfolio-caption-heading">Ham&Egg Sandwhich</div>
+                        <div class="portfolio-caption-subheading text-muted">bread</div>
                     </div>
                 </div>
             </div>
@@ -61,8 +61,8 @@
                         <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis4.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">product4</div>
-                        <div class="portfolio-caption-subheading text-muted">Milk Tea</div>
+                        <div class="portfolio-caption-heading"> <main>Milk Tea</main></div>
+                        <div class="portfolio-caption-subheading text-muted">drinks</div>
                     </div>
                 </div>
             </div>
@@ -76,8 +76,8 @@
                         <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis5.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">product5</div>
-                        <div class="portfolio-caption-subheading text-muted">Pizza</div>
+                        <div class="portfolio-caption-heading">Pizza</div>
+                        <div class="portfolio-caption-subheading text-muted">bread</div>
                     </div>
                 </div>
             </div>
@@ -91,8 +91,8 @@
                         <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis6.jpg" alt="..." />
                     </a>
                     <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading">product6</div>
-                        <div class="portfolio-caption-subheading text-muted">Mango Graham</div>
+                        <div class="portfolio-caption-heading">Mango Graham</div>
+                        <div class="portfolio-caption-subheading text-muted">dessert</div>
                     </div>
                 </div>
             </div>

@@ -64,7 +64,7 @@
                                         </li>
                                         <li>
                                             <strong>Category:</strong>
-                                             Desssert
+                                             Dessert
                                         </li>
                                     </ul>
                                     <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
