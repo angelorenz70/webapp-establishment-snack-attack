@@ -1,6 +1,6 @@
-@include('page-parts.page-announcement')
+
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="margin-top: 40px"   id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top"  id="mainNav">
     <div class="container">
         <a class="navbar-brand" href="#page-top"> <img style = "height:70px; width:100px" src="{{ url('assets-homepage/assets/img/logos/logo.jpg') }}" alt="..." /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,14 +15,14 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item btn btn-warning"><a class="nav-link" href="#login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#announcement">Announcement</a></li>
                 @else
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#team">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#contact">Contact</a></li>
-                    <li class="nav-item btn btn-warning"><a class="nav-link" href="{{ url('/login') }}">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#announcement">Announcement</a></li>
                 @endif
             </ul>
         </div>
