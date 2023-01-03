@@ -18,11 +18,10 @@ class AnnouncementFactory extends Factory
     public function definition()
     {
         return [
-            
             'header' => fake()->name(),
             'sub_header' => fake()->name(),
             'image' => fake()->randomElement($array = array ('image.jpg','image.png', "image.ivg")),
-            'description' => fake()->realText($maxNbChars = 200, $indexSize = 2),
+            'description' => fake()->realText($maxNbChars = 50, $indexSize = 2),
             'user_id' => User::class
         ];
     }
