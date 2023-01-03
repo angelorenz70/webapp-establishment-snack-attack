@@ -27,10 +27,10 @@
                     <img class="img-fluid" src="assets-homepage/assets/img/serviceslogo/services3.png" alt="..." />
                 </span>
                 <h4 class="my-3">Booking</h4>
-                <p class="text-muted">For reservation you may call/text at (0916157500) or  message us in facebok  
+                <p class="text-muted">For reservation you may call/text at (0916157500) or  message us in 
                     <a class="nav-link" href="{{ url('https://www.facebook.com/snackattack007/?mibextid=ZbWKwL') }}" target="_blank">Snack Attack</a>
                 </p>
             </div>
         </div>
     </div>
-</section>
+</section
