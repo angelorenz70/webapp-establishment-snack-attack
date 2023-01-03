@@ -2,22 +2,23 @@
 
 namespace App\Http\Controllers\Api\Version1;
 
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Announcement;
-use App\Http\Requests\StoreAnnouncementRequest;
-use App\Http\Requests\UpdateAnnouncementRequest;
+use App\Models\User;
 use App\Http\Resources\Version1\UserResource;
+use App\Http\Requests\StoreUserRequest;
+use App\Http\Requests\UpdateUserRequest;
 
-class AnnouncementController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return Announcement::all();
+    public function index(){
+        
+        return User::all();
     }
 
     /**
@@ -25,18 +26,19 @@ class AnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
+    //public function create(StoreUserRequest $request)
+    //{
         //
-    }
+        
+    //}
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StoreAnnouncementRequest  $request
+     * @param  \App\Http\Requests\StoreUserRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreAnnouncementRequest $request)
+    public function store()
     {
         //
     }
@@ -44,45 +46,50 @@ class AnnouncementController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Announcement  $announcement
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(Announcement $announcement)
+    public function show(User $user)
     {
-        //
+        return new UserResource($user);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Announcement  $announcement
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(Announcement $announcement)
+    public function edit(User $user)
     {
         //
     }
 
-    /**
+/**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateAnnouncementRequest  $request
-     * @param  \App\Models\Announcement  $announcement
+     * @param  \App\Http\Requests\UpdateUserRequest  $request
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateAnnouncementRequest $request, Announcement $announcement)
-    {
+
+    
+    // public function update(UpdateUserRequest $request, User $user)
+    //{
         //
-    }
+        
+    //}
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Announcement  $announcement
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Announcement $announcement)
+    public function destroy(User $user)
     {
         //
     }
+
+
 }

@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\Api\version1\AnnouncementController;
+use App\Http\Controllers\Api\Version1\AnnouncementController;
+use App\Http\Controllers\Api\Version1\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 // api/version1
-Route::group(['prefix' => 'version1', 'namespace' => 'App/Http/Controllers/Api/version1'], function(){
-    Route::apiResource('announcement', AnnouncementController::class);
+Route::group(['prefix' => 'version1', 'namespace' => 'App\Http\Controllers\Api\Version1'], function(){
+    Route::apiResource('users', UserController::class);
+    Route::apiResource('announcements', AnnouncementController::class);
 });
