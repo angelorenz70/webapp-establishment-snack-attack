@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Http\Resources\Version1\UserResource;
+use App\http\Resources\Version1\UserCollection;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
 
@@ -18,7 +19,7 @@ class UserController extends Controller
      */
     public function index(){
         
-        return User::all();
+        return new UserCollection(User::all());
     }
 
     /**
