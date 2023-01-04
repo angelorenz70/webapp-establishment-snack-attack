@@ -98,9 +98,9 @@
             </div>
         </div>
         <div>
-            <!-- Button trigger modal -->
+            <!-- Menu button trigger modal -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menuModal">
-                OPEN MENU
+                OPEN MORE PRODUCT
             </button>
         </div>
     </div>
