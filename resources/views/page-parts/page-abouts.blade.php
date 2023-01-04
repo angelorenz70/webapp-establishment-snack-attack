@@ -7,7 +7,7 @@
         </div>
         <ul class="timeline">
             <li>
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets-homepage/assets/img/about/1.jpg" alt="..." /></div>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets-homepage/assets/img/about/abt1.png" alt="..." /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>1998 - 2023</h4>
@@ -17,33 +17,13 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets-homepage/assets/img/about/2.jpg" alt="..." /></div>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets-homepage/assets/img/about/abt2.png" alt="..." /></div>
                 <div class="timeline-panel">
                     <div class="timeline-heading">
                         <h4>1998</h4>
                         <h4 class="subheading">Modern Restaurant</h4>
                     </div>
                     <div class="timeline-body"><p class="text-muted">A modern resturant with a menu that will make your mouth water. Serving delicious food since 45 years. Enjoy our seasonal menu and experience the beauty of naturalness!</p></div>
-                </div>
-            </li>
-            <li>
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets-homepage/assets/img/about/3.jpg" alt="..." /></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>December 2015</h4>
-                        <h4 class="subheading">Transition to Full Service</h4>
-                    </div>
-                    <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                </div>
-            </li>
-            <li class="timeline-inverted">
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets-homepage/assets/img/about/4.jpg" alt="..." /></div>
-                <div class="timeline-panel">
-                    <div class="timeline-heading">
-                        <h4>July 2020</h4>
-                        <h4 class="subheading">Phase Two Expansion</h4>
-                    </div>
-                    <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
                 </div>
             </li>
             <li class="timeline-inverted">
