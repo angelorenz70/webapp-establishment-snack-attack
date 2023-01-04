@@ -27,7 +27,8 @@ class AnnouncementController extends Controller
         if(count($queryItems) == 0){
             return new AnnouncementCollection(Announcement::paginate());
         } else {
-            return new AnnouncementCollection(Announcement::where($queryItems)->paginate() );
+            $announcements = Announcement::where($queryItems)->paginate();
+            return new AnnouncementCollection($announcements->appends($request->query()));
         }
     }
 

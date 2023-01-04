@@ -25,7 +25,8 @@ class UserController extends Controller
         if(count($queryItems) == 0){
             return new UserCollection(User::paginate());
         } else {
-            return new UserCollection(User::where($queryItems)->paginate() );
+            $users = User::where($queryItems)->paginate();
+            return new UserCollection($users->appends($request->query()));
         }
     }
 
