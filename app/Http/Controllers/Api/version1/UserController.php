@@ -5,7 +5,9 @@ namespace App\Http\Controllers\Api\Version1;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Services\Version1\UserQuery;
 use App\Http\Resources\Version1\UserResource;
+use App\http\Resources\Version1\UserCollection;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
 
@@ -16,9 +18,15 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(){
-        
-        return User::all();
+    public function index(Request $request){
+        $filter = new UserQuery();
+        $queryItems = $filter->transform($request); //[['column','operator','value']]
+
+        if(count($queryItems) == 0){
+            return new UserCollection(User::paginate());
+        } else {
+            return new UserCollection(User::where($queryItems)->paginate() );
+        }
     }
 
     /**

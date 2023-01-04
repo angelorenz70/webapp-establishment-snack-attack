@@ -6,8 +6,11 @@ use App\Http\Controllers\Controller;
 use App\Models\Announcement;
 use App\Http\Requests\StoreAnnouncementRequest;
 use App\Http\Requests\UpdateAnnouncementRequest;
+use App\Http\Resources\Version1\AnnouncementCollection;
 use App\Http\Resources\Version1\AnnouncementResource;
+use App\Services\Version1\AnnouncementQuery;
 use App\Http\Resources\Version1\UserResource;
+use Illuminate\Http\Request;
 
 class AnnouncementController extends Controller
 {
@@ -16,9 +19,16 @@ class AnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return Announcement::all();
+        $filter = new AnnouncementQuery();
+        $queryItems = $filter->transform($request); //[['column','operator','value']]
+
+        if(count($queryItems) == 0){
+            return new AnnouncementCollection(Announcement::paginate());
+        } else {
+            return new AnnouncementCollection(Announcement::where($queryItems)->paginate() );
+        }
     }
 
     /**
