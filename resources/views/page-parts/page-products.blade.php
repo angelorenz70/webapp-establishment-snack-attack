@@ -97,6 +97,37 @@
                 </div>
             </div>
         </div>
+        <div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#menuModal">
+                OPEN MENU
+            </button>
+        </div>
+    </div>
+
+    <!-- Menu Modal -->
+    <div class="modal fade" id="menuModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h3 class="text-uppercase">SNACK ATTACK</h3>
+                            <img class="img-fluid border border-warnin d-block mx-auto" src="assets-homepage/assets/img/menu/menu.jpg" alt="..." />
+                            <ul class="list-inline">
+                                <li>
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                CLOSE MENU
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Portfolio Modals-->
