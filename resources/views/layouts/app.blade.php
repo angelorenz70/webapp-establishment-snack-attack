@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Business</title>
+        <title>Snack Attack Restaurant</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{{ asset('assets-homepage/assets/business-icon.png')}}" />
         <!-- Font Awesome icons (free version)-->
