@@ -1,4 +1,5 @@
-@extends('layouts.app')
+@include('layouts.navbar')
+@extends('layouts.landingPage')
 
 @section('content')
         <!-- Masthead-->

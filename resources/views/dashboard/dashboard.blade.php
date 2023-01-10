@@ -2,7 +2,6 @@
 
 @section('content')
         <div id="layoutSidenav">
-            
             @include('layouts.sidemenu-dashboard')
 
             <div id="layoutSidenav_content">

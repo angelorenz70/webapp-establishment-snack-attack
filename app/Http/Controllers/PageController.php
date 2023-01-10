@@ -11,7 +11,11 @@ class PageController extends Controller
     }
 
     public function login(){
-        return view('login');
+        return view('loginPage');
+    }
+
+    public function register(){
+        return view('registerPage');        
     }
 
     public function dashboard(){

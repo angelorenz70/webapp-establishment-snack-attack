@@ -16,6 +16,7 @@
                     <li class="nav-item"><a class="nav-link" href="#team">Owner</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#announcement">Announcement</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-warning" href="{{ url('/login') }}">Login</a></li>
                 @else
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#portfolio">Products</a></li>
@@ -23,6 +24,7 @@
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#team">Owner</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ url('/') }}#announcement">Announcement</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-warning" href="{{ url('/login') }}">Login</a></li>
                 @endif
             </ul>
         </div>
