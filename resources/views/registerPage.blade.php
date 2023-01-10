@@ -1,10 +1,10 @@
 @extends('layouts.landingPage')
  
 @section('content')
-    <header class="masthead" style="background-image: url('assets-homepage/assets/img/header-bg2.jpg')">
+    <body style="background: url('assets-homepage/assets/img/header-bg2.jpg'); background-repeat:no-repeat; background-size:cover">
         <div id="layoutAuthentication_content">
             <main>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center pt-5">
                     <div class="col-lg-5">
                         <div class="card shadow-lg border-0 rounded-lg mt-5">
                             <div class="card-header"><h3 class="text-center font-weight-light my-4 text-dark">Register Account</h3></div>
@@ -63,6 +63,6 @@
                 </div>
             </main>
         </div>
-    </header>
+    </body>
         
 @endsection
