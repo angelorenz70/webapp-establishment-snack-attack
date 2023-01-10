@@ -1,10 +1,10 @@
 @extends('layouts.landingPage')
  
 @section('content')
-    <header class="masthead" style="background-image: url('assets-homepage/assets/img/header-bg2.jpg')">
+    <body style="background:url('assets-homepage/assets/img/header-bg2.jpg'); background-repeat:no-repeat; background-size:cover">
         <div id="layoutAuthentication_content">
             <main>
-                <div class="container">
+                <div class="container pt-5">
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
@@ -44,8 +44,8 @@
                                                     {{ __('Forgot your password?') }}
                                                 </a>
                                             @endif
-                                            <x-primary-button class="ml-3">
-                                                <span class="text-dark">log in</span>
+                                            <x-primary-button class="ml-3 btn-primary">
+                                                <span class="text-light">log in</span>
                                             </x-primary-button>
                                         </div>
                                     </form>
@@ -59,6 +59,5 @@
                 </div>
             </main>
         </div>
-    </header>
-        
+    </body>
 @endsection
