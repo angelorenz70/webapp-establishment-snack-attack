@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.landingPage')
  
 @section('content')
     <header class="masthead" style="background-image: url('assets-homepage/assets/img/header-bg2.jpg')">
