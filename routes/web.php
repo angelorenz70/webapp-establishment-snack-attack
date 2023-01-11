@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\Api\Version1\AnnouncementController;
+use App\Http\Controllers\Api\Version1\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,13 +20,16 @@ Route::get('/', function () {
     return view('homepage');
 });
 
-Route::get('/dashboard-announcements', function(){
-    return view('dashboard.dashboard-announcement');
-})->middleware(['auth', 'verified'])->name('dashboard-announcements');;
+Route::get('/dashboard-announcements', [AnnouncementController::class, 'index'])
+->middleware(['auth', 'verified'])->name('dashboard-announcements');
+Route::get('/dashboard-announcements/add-announcement', [AnnouncementController::class, 'create'])
+->middleware(['auth', 'verified'])->name('dashboard-announcements/add-announcement');
+Route::get('/dashboard-announcements/edit-announcement', [AnnouncementController::class, 'edit'])
+->middleware(['auth', 'verified'])->name('dashboard-announcements/edit-announcement');
 
-Route::get('/dashboard-users', function(){
-    return view('dashboard.dashboard-user');
-})->middleware(['auth', 'verified'])->name('dashboard-users');
+
+Route::get('/dashboard-users', [UserController::class, 'index'])
+->middleware(['auth', 'verified'])->name('dashboard-users');
 
 
 Route::get('/dashboard', function () {
