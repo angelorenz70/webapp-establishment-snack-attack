@@ -8,7 +8,7 @@
                 @if ($message = Session::get('success'))
                     <div class="alert alert-success">{{ $message }}</div>                    
                 @endif
-                <div class="card mb-4 mt-5">
+                <div class="card mb-4">
                     <div class="card-header">
                         <div class="col col-md-6">
                             <i class="fas fa-table me-1"></i>
@@ -53,7 +53,7 @@
                                                 @csrf
                                                 @method('DELETE')
                                                 <!--Unya nalang ning edit-->
-                                                <a href="{{ url('dashboard-announcements/edit-announcement') }}" class="btn btn-warning btn-sm">EDIT</a>
+                                                <a href="{{ url('dashboard-announcements/edit-announcement') }}" class="btn btn-primary btn-sm">UPDATE</a>
                                                 
                                                 <input type="submit" class="btn btn-danger btn-sm" value="DELETE">
                                             </form>

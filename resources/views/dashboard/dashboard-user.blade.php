@@ -8,7 +8,7 @@
                 <div class="card mb-4">
                     <div class="card-header">
                         <i class="fas fa-table me-1"></i>
-                        Users table
+                        <b>Users table</b>
                     </div>
                     <div class="card-body">
                         <table id="datatablesSimple">
@@ -31,7 +31,16 @@
                                     <tr>
                                         <td>{{ $row->name }}</td>
                                         <td>{{ $row->email}}</td>
-                                        <td></td>
+                                        <td>
+                                            <form method="post" action=" ">
+                                                @csrf
+                                                @method('DELETE')
+                                                <!--Unya nalang ning edit-->
+                                                <a href=" " class="btn btn-primary btn-sm">UPDATE</a>
+                                                
+                                                <input type="submit" class="btn btn-danger btn-sm" value="DELETE">
+                                            </form>
+                                        </td>
                                     </tr>
                                 @endforeach
                             </tbody>
