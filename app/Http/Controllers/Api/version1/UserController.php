@@ -10,6 +10,7 @@ use App\Http\Resources\Version1\UserResource;
 use App\http\Resources\Version1\UserCollection;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -19,15 +20,20 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request){
-        $filter = new UserQuery();
-        $queryItems = $filter->transform($request); //[['column','operator','value']]
+        // $filter = new UserQuery();
+        // $queryItems = $filter->transform($request); //[['column','operator','value']]
 
-        if(count($queryItems) == 0){
-            return new UserCollection(User::paginate());
-        } else {
-            $users = User::where($queryItems)->paginate();
-            return new UserCollection($users->appends($request->query()));
-        }
+        // if(count($queryItems) == 0){
+        //     return new UserCollection(User::paginate());
+        // } else {
+        //     $users = User::where($queryItems)->paginate();
+        //     return new UserCollection($users->appends($request->query()));
+        // }
+        $data = DB::table('users')
+                ->select('id','name','email')
+                ->get();
+        
+        return view('dashboard.dashboard-user', ['users' => $data] );
     }
 
     /**
@@ -97,8 +103,9 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        $user->delete();
+
+        return redirect()->route('users.index')
+        ->with('success', 'user deleted successfully!');
     }
-
-
 }

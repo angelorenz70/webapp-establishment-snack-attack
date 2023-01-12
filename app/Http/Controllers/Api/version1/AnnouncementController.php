@@ -11,6 +11,7 @@ use App\Http\Resources\Version1\AnnouncementResource;
 use App\Services\Version1\AnnouncementQuery;
 use App\Http\Resources\Version1\UserResource;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AnnouncementController extends Controller
 {
@@ -19,17 +20,23 @@ class AnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index()
     {
-        $filter = new AnnouncementQuery();
-        $queryItems = $filter->transform($request); //[['column','operator','value']]
+        // $filter = new AnnouncementQuery();
+        // $queryItems = $filter->transform($request); //[['column','operator','value']]
 
-        if(count($queryItems) == 0){
-            return new AnnouncementCollection(Announcement::paginate());
-        } else {
-            $announcements = Announcement::where($queryItems)->paginate();
-            return new AnnouncementCollection($announcements->appends($request->query()));
-        }
+        // if(count($queryItems) == 0){
+        //     return new AnnouncementCollection(Announcement::paginate());
+        // } else {
+        //     $announcements = Announcement::where($queryItems)->paginate();
+        //     return new AnnouncementCollection($announcements->appends($request->query()));
+        // }
+
+        $data = DB::table('announcements')
+                ->select('id','header', 'sub_header', 'image', 'description', 'user_id')
+                ->get();
+
+        return view('dashboard.dashboard-announcement', ['announcements' => $data]);
     }
 
     /**
@@ -39,7 +46,7 @@ class AnnouncementController extends Controller
      */
     public function create()
     {
-        //
+        return view('operation-for-database.add-announcements');
     }
 
     /**
@@ -48,9 +55,27 @@ class AnnouncementController extends Controller
      * @param  \App\Http\Requests\StoreAnnouncementRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreAnnouncementRequest $request)
+    public function store(Request $request)
     {
-        //
+        $request->validate([
+            'header' => 'required',
+            'sub_header' => 'required',
+            'image' => 'required',
+            'description' => 'required',
+            'user_id' => 'required'
+        ]);
+    
+        $announcement = new Announcement;
+
+        $announcement->header = $request->header;
+        $announcement->sub_header = $request->sub_header;
+        $announcement->image = $request->image;
+        $announcement->description = $request->description;
+        $announcement->user_id = $request->user_id;
+        $announcement->save();
+
+        return redirect()->route('announcements.index')
+        ->with('success', 'announcement added successfully!');
     }
 
     /**
@@ -72,7 +97,7 @@ class AnnouncementController extends Controller
      */
     public function edit(Announcement $announcement)
     {
-        //
+        return view('operation-for-database.edit-announcements');
     }
 
     /**
@@ -95,6 +120,9 @@ class AnnouncementController extends Controller
      */
     public function destroy(Announcement $announcement)
     {
-        //
+        $announcement->delete();
+
+        return redirect()->route('announcements.index')
+        ->with('success', 'announcement deleted successfully!');
     }
 }
