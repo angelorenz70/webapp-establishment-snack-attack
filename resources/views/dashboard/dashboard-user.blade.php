@@ -32,7 +32,7 @@
                                         <td>{{ $row->name }}</td>
                                         <td>{{ $row->email}}</td>
                                         <td>
-                                            <form method="post" action=" ">
+                                            <form method="post" action=" {{ route('users.destroy', $row->id) }} ">
                                                 @csrf
                                                 @method('DELETE')
                                                 <!--Unya nalang ning edit-->

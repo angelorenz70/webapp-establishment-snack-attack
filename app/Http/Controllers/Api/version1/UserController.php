@@ -30,7 +30,7 @@ class UserController extends Controller
         //     return new UserCollection($users->appends($request->query()));
         // }
         $data = DB::table('users')
-                ->select('name','email')
+                ->select('id','name','email')
                 ->get();
         
         return view('dashboard.dashboard-user', ['users' => $data] );
@@ -103,7 +103,10 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        //
+        $user->delete();
+
+        return redirect()->route('users.index')
+        ->with('success', 'user deleted successfully!');
     }
 
 
