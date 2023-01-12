@@ -4,15 +4,15 @@
     </div>
     <div class="container">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{{asset("assets-homepage/assets/img/announcement/announcement.jpg")}}" class="d-block w-100" alt="...">
+            <div class="carousel-inner" style="background-image: url('assets-homepage/assets/img/announcement/announcement.jpg')">
+              <div class="carousel-item active  mt-5 ml-5">
+                <h1>HELLO</h1>
               </div>
-              <div class="carousel-item">
-                <img src="{{asset("assets-homepage/assets/img/announcement/announcement.jpg")}}" class="d-block w-100" alt="...">
+              <div class="carousel-item mt-5 ml-5">
+                <h1>WOLRD</h1>
               </div>
-              <div class="carousel-item">
-                <img src="{{asset("assets-homepage/assets/img/announcement/announcement.jpg")}}" class="d-block w-100" alt="...">
+              <div class="carousel-item mt-5 ml-5">
+                <h1>HI</h1>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">

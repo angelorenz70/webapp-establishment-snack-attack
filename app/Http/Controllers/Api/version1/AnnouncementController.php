@@ -60,16 +60,19 @@ class AnnouncementController extends Controller
         $request->validate([
             'header' => 'required',
             'sub_header' => 'required',
-            'image' => 'required',
+            'image' => 'required|image|mimes:png,jpg,jpeg,svg|max:2048|',
             'description' => 'required',
             'user_id' => 'required'
         ]);
     
+        $file_name = time() . '.' . request()->image->getClientOriginalExtension();
+        request()->image->move(public_path('images'), $file_name);
+
         $announcement = new Announcement;
 
         $announcement->header = $request->header;
         $announcement->sub_header = $request->sub_header;
-        $announcement->image = $request->image;
+        $announcement->image = $file_name;
         $announcement->description = $request->description;
         $announcement->user_id = $request->user_id;
         $announcement->save();
