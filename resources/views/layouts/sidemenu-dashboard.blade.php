@@ -48,6 +48,9 @@
                                 <a class="nav-link" href="500.html">500 Page</a>
                             </nav>
                         </div>
+                        <a class="nav-link collapsed" href="{{ url(' ') }}" target="_blank" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                            Homepage
+                        </a>
                     </nav>
                 </div>
 

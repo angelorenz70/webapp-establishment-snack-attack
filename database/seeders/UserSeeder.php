@@ -16,20 +16,20 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        User::factory()
-            ->count(10)
-            ->hasAnnouncements(5)
-            ->create();
+        // User::factory()
+        //     ->count(10)
+        //     ->hasAnnouncements(5)
+        //     ->create();
     
-        User::factory()
-            ->count(15)
-            ->hasAnnouncements(3)
-            ->create();
+        // User::factory()
+        //     ->count(15)
+        //     ->hasAnnouncements(3)
+        //     ->create();
 
-        User::factory()
-            ->count(20)
-            ->hasAnnouncements(7)
-            ->create();
+        // User::factory()
+        //     ->count(20)
+        //     ->hasAnnouncements(7)
+        //     ->create();
 
         User::factory()
             ->count(10)
