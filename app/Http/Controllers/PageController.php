@@ -1,13 +1,18 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
     public function index(){
-        return view('homepage');
+        $data = DB::table('announcements')
+                ->select('id','header', 'sub_header', 'image', 'description')
+                ->get();
+
+        return view('homepage', ['announcements' => $data]);
     }
 
     public function login(){

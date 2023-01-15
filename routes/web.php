@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Api\Version1\AnnouncementController;
 use App\Http\Controllers\Api\Version1\UserController;
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,16 +17,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-});
+// Route::get('/', function () {
+//     return view('homepage');
+// });
+
+Route::get('/', [PageController::class, 'index']);
 
 Route::get('/dashboard-announcements', [AnnouncementController::class, 'index'])
 ->middleware(['auth', 'verified'])->name('dashboard-announcements');
 Route::get('/dashboard-announcements/add-announcement', [AnnouncementController::class, 'create'])
 ->middleware(['auth', 'verified'])->name('dashboard-announcements/add-announcement');
-Route::get('/dashboard-announcements/edit-announcement', [AnnouncementController::class, 'edit'])
-->middleware(['auth', 'verified'])->name('dashboard-announcements/edit-announcement');
+
+Route::resource('announcements', AnnouncementController::class)->middleware(['auth', 'verified']);
 
 
 Route::get('/dashboard-users', [UserController::class, 'index'])

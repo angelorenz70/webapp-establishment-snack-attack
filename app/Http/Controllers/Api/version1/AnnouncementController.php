@@ -100,7 +100,7 @@ class AnnouncementController extends Controller
      */
     public function edit(Announcement $announcement)
     {
-        return view('operation-for-database.edit-announcements');
+        return view('operation-for-database.edit-announcements', compact('announcement'));
     }
 
     /**
@@ -110,9 +110,34 @@ class AnnouncementController extends Controller
      * @param  \App\Models\Announcement  $announcement
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateAnnouncementRequest $request, Announcement $announcement)
+    public function update(Request $request, Announcement $announcement)
     {
-        //
+        $request->validate([
+            'header' => 'required',
+            'sub_header' => 'required',
+            'image' => 'required|image|mimes:png,jpg,jpeg,svg|max:2048|',
+            'description' => 'required',
+            'user_id' => 'required'
+        ]);
+
+        $image = $request->hidden_image;
+
+        if($request->image != ' '){
+            $image = time() . '.' . request()->image->getClientOriginalExtension();
+            request()->image->move(public_path('images'), $image);
+        }
+
+        $announcement = Announcement::find($request->hidden_id);
+
+        $announcement->header = $request->header;
+        $announcement->sub_header = $request->sub_header;
+        $announcement->image = $image;
+        $announcement->description = $request->description;
+        $announcement->user_id = $request->user_id;
+        $announcement->save();
+
+        return redirect()->route('announcements.index')
+        ->with('success', 'announcement updated successfully!');
     }
 
     /**

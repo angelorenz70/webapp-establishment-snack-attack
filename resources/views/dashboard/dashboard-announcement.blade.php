@@ -53,7 +53,7 @@
                                                 @csrf
                                                 @method('DELETE')
                                                 <!--Unya nalang ning edit-->
-                                                <a href="{{ url('dashboard-announcements/edit-announcement') }}" class="btn btn-primary btn-sm">UPDATE</a>
+                                                <a href="{{ route('announcements.edit', $row->id) }}" class="btn btn-primary btn-sm">UPDATE</a>
                                                 
                                                 <input type="submit" class="btn btn-danger btn-sm" value="DELETE">
                                             </form>
