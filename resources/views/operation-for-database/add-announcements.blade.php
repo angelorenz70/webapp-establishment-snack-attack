@@ -45,8 +45,8 @@
                             </div>
                         </form>
                     </div>
-                    <label for=""><b>MESSAGE: </b></label>
                     @if ($errors->any())
+                    <label for="" class="text-danger"><b>MESSAGE: </b></label>
                     <div class="container">
                         <ul>
                             @foreach ($errors->all() as $error)

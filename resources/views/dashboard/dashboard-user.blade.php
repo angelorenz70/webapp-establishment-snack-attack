@@ -35,9 +35,7 @@
                                             <form method="post" action=" {{ route('users.destroy', $row->id) }} ">
                                                 @csrf
                                                 @method('DELETE')
-                                                <!--Unya nalang ning edit-->
                                                 <a href=" " class="btn btn-primary btn-sm">UPDATE</a>
-                                                
                                                 <input type="submit" class="btn btn-danger btn-sm" value="DELETE">
                                             </form>
                                         </td>
