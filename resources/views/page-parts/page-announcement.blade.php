@@ -1,9 +1,9 @@
 <div class="section" id="announcement">
   <div class="container-fluid bg-dark">
       <div class="container text-warning">
-          <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Announcement</h3>
+          <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"  data-aos="fade-right" data-aos-delay="100">Announcement</h3>
       </div>
-      <div class="container">
+      <div class="container"  data-aos="fade-up" data-aos-delay="300">
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner" style="background-image: url('assets-homepage/assets/img/announcement/announcement.jpg'); height: 65%">
                 @foreach ($announcements as $announcement)
