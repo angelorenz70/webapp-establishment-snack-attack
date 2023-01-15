@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Api\Version1\AnnouncementController;
 use App\Http\Controllers\Api\Version1\UserController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,6 +30,8 @@ Route::get('/dashboard-announcements/add-announcement', [AnnouncementController:
 ->middleware(['auth', 'verified'])->name('dashboard-announcements/add-announcement');
 
 Route::resource('announcements', AnnouncementController::class)->middleware(['auth', 'verified']);
+Route::resource('contacts', ContactController::class);
+Route::resource('homepage', PageController::class);
 
 
 Route::get('/dashboard-users', [UserController::class, 'index'])

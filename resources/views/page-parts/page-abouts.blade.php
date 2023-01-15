@@ -1,14 +1,14 @@
 <!-- About-->
 <section class="page-section" id="about">
     <div class="container">
-        <div class="text-center">
-            <h2 class="section-heading text-uppercase">About</h2>
-            <h3 class="section-subheading text-muted">Taste, Enjoy, Remember!.</h3>
+        <div class="text-center"> 
+            <h2 class="section-heading text-uppercase" data-aos="zoom-in" data-aos-delay="100">About</h2>
+            <h3 class="section-subheading text-muted" data-aos="fade-up" data-aos-delay="150">Taste, Enjoy, Remember!.</h3>
         </div>
         <ul class="timeline">
             <li>
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets-homepage/assets/img/about/abt1.png" alt="..." /></div>
-                <div class="timeline-panel">
+                <div class="timeline-image" data-aos="zoom-in" data-aos-delay="200"><img class="rounded-circle img-fluid" src="assets-homepage/assets/img/about/abt1.png" alt="..." /></div>
+                <div class="timeline-panel" data-aos="fade-right" data-aos-delay="250">
                     <div class="timeline-heading">
                         <h4>1998 - 2023</h4>
                         <h4 class="subheading">Served Every Day Since 1998</h4>
@@ -17,8 +17,8 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets-homepage/assets/img/about/abt2.png" alt="..." /></div>
-                <div class="timeline-panel">
+                <div class="timeline-image" data-aos="zoom-in" data-aos-delay="100"><img class="rounded-circle img-fluid" src="assets-homepage/assets/img/about/abt2.png" alt="..." /></div>
+                <div class="timeline-panel" data-aos="fade-left" data-aos-delay="150">
                     <div class="timeline-heading">
                         <h4>1998</h4>
                         <h4 class="subheading">Modern Restaurant</h4>
@@ -27,7 +27,7 @@
                 </div>
             </li>
             <li class="timeline-inverted">
-                <div class="timeline-image">
+                <div class="timeline-image" data-aos="fade-up" data-aos-delay="100">
                     <h4>
                         Be Part
                         <br />
