@@ -10,10 +10,8 @@
                 @endif
                 <div class="card mb-4">
                     <div class="card-header">
-                        <div class="col col-md-6">
-                            <i class="fas fa-table me-1"></i>
-                            <b>Annoucements table</b>
-                        </div>
+                        <i class="fas fa-table me-1"></i>
+                        <b>Annoucements table</b>
                         <div class="col">
                             <a href="{{ url('dashboard-announcements/add-announcement') }}" class="btn btn-success btn-sm float-end">ADD</a>
                         </div>
@@ -42,24 +40,22 @@
                             </tfoot>
                             <tbody>
                                 @foreach ($announcements as $row)
-                                    <tr>
-                                        <td>{{ $row->header }}</td>
-                                        <td>{{ $row->sub_header }}</td>
-                                        <td>{{ $row->image }}</td>
-                                        <td>{{ $row->description }}</td>
-                                        <td>{{ $row->user_id }}</td>
-                                        <td>
-                                            <form method="post" action="{{ route('announcements.destroy', $row->id) }}">
-                                                @csrf
-                                                @method('DELETE')
-                                                <!--Unya nalang ning edit-->
-                                                <a href="{{ route('announcements.edit', $row->id) }}" class="btn btn-primary btn-sm">UPDATE</a>
-                                                
-                                                <input type="submit" class="btn btn-danger btn-sm" value="DELETE">
-                                            </form>
-                                        </td>
-                                    </tr>  
-                                @endforeach    
+                                <tr>
+                                    <td>{{ $row->header }}</td>
+                                    <td>{{ $row->sub_header }}</td>
+                                    <td>{{ $row->image }}</td>
+                                    <td>{{ $row->description }}</td>
+                                    <td>{{ $row->user_id }}</td>
+                                    <td>
+                                        <form method="post" action="{{ route('announcements.destroy', $row->id) }}">
+                                            @csrf
+                                            @method('DELETE')
+                                            <a href="{{ route('announcements.edit', $row->id) }}" class="btn btn-primary btn-sm">UPDATE</a>
+                                            <input type="submit" class="btn btn-danger btn-sm" value="DELETE">
+                                        </form>
+                                    </td>
+                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
