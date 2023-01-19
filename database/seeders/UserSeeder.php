@@ -32,7 +32,7 @@ class UserSeeder extends Seeder
         //     ->create();
 
         User::factory()
-            ->count(10)
+            ->count(20)
             ->create();
     }
 }
