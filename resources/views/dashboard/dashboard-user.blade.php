@@ -5,10 +5,16 @@
         @include('layouts.sidemenu-dashboard')
         <div id="layoutSidenav_content">
             <main>
+                @if ($message = Session::get('success'))
+                    <div class="alert alert-success">{{ $message }}</div>                    
+                @endif
                 <div class="card mb-4">
                     <div class="card-header">
                         <i class="fas fa-table me-1"></i>
                         <b>Users table</b>
+                        <div class="col">
+                            <a href="{{ route('users.create') }}" class="btn btn-success btn-sm float-end">ADD USER</a>
+                        </div>
                     </div>
                     <div class="card-body">
                         <table id="datatablesSimple">

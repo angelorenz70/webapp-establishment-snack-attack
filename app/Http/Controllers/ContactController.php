@@ -51,7 +51,7 @@ class ContactController extends Controller
         $contact->messages = $request->messages;
         $contact->save();
 
-        return route('homepage.index');
+        return ['message' => 'success'];
     }
 
     /**

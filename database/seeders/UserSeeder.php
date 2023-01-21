@@ -31,8 +31,8 @@ class UserSeeder extends Seeder
         //     ->hasAnnouncements(7)
         //     ->create();
 
-        User::factory()
-            ->count(10)
-            ->create();
+        // User::factory()
+        //      ->count(1)
+        //      ->create();
     }
 }

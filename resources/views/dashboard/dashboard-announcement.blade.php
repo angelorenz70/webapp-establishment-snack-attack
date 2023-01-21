@@ -13,7 +13,7 @@
                         <i class="fas fa-table me-1"></i>
                         <b>Annoucements table</b>
                         <div class="col">
-                            <a href="{{ url('dashboard-announcements/add-announcement') }}" class="btn btn-success btn-sm float-end">ADD</a>
+                            <a href="{{ route('announcements.create') }}" class="btn btn-success btn-sm float-end">ADD ANNOUNCEMENT</a>
                         </div>
                     </div>
                     <div class="card-body">
