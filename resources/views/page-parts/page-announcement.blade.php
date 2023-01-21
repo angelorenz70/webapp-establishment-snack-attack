@@ -5,25 +5,25 @@
       </div>
       <div class="container"  data-aos="fade-up" data-aos-delay="300">
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner" style="background-image: url('assets-homepage/assets/img/announcement/announcement.jpg'); height: 65%">
+              <div class="carousel-inner" style="background-image: url('assets-homepage/assets/img/announcement/announcement3.jpg'); height: 65%">
                 @foreach ($announcements as $announcement)
                     <div class="carousel-item @if($loop->first) active @endif  mt-5 ml-5">
                         <div class="row align-items-stretch mb-5" style="margin-top: 3%; margin-bottom:5%">
                             <div class="col-md-6">
                                 <div class="ps-5">
                                     <!-- Header display announcements-->
-                                    <label for="" class="m-auto"><b>HEADER:</b></label>
-                                    <div class="container border border-1 border-primary" style="width: 10% height: 20%"><b>{{ $announcement->header }}</b></div>
+                                    <label for="" class="m-auto p-1 mb-2 bg-danger text-white"><b>HEADER:</b></label>
+                                    <div class="container border border-1 border-primary p-1 mb-2 bg-light text-dark" style="width: 10% height: 20%"><b>{{ $announcement->header }}</b></div>
                                 </div>
                                 <div class="ps-5">
                                     <!-- sub Header display announcements-->
-                                    <label for="" class="m-auto"><b>SUB HEADER:</b></label>
-                                    <div class="container border border-1 border-primary" style="width: 10% height: 20%"><b>{{ $announcement->sub_header }}</b></div>
+                                    <label for="" class="m-auto p-1 mb-2 bg-danger text-white"><b>SUB HEADER:</b></label>
+                                    <div class="container border border-1 border-primary p-1 mb-2 bg-light text-dark" style="width: 10% height: 20%"><b>{{ $announcement->sub_header }}</b></div>
                                 </div>
                                 <div class="mb-md-0 ps-5">
                                     <!-- description display announcements-->
-                                    <label for="" class="m-auto"><b>DESCRIPTION:</b></label>
-                                    <div class="container border border-1 border-primary" style="width: 10% height: 20%"><b>{{ $announcement->description }}</b></div>
+                                    <label for="" class="m-auto p-1 mb-2 bg-danger text-white"><b>DESCRIPTION:</b></label>
+                                    <div class="container border border-1 border-primary p-1 mb-2 bg-light text-dark" style="width: 10% height: 20%"><b>{{ $announcement->description }}</b></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
