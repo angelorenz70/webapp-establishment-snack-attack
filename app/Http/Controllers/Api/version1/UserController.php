@@ -63,9 +63,24 @@ class UserController extends Controller
      * @param  \App\Http\Requests\StoreUserRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store()
-    {
-        //
+    public function store(Request $request)
+    {   
+            $request->validate([
+                $name = 'required',
+                $email = 'required',
+                $password = 'required',
+            ]);
+
+            $user = new User();
+
+            $user->name = $request->$name;
+            $user->email = $request->$email;
+            $user->password = $request->$password;
+            
+            $user->save();
+
+            return redirect()->route('users.index')
+            ->with('success','new user added successfully!');
     }
 
     /**

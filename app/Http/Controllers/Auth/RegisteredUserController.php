@@ -20,7 +20,7 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
-        return view('operation-for-database.add-user');
+        return view('operation-for-database.add-users');
     }
 
     /**
@@ -44,7 +44,7 @@ class RegisteredUserController extends Controller
 
         event(new Registered($user));
 
-        Auth::login($user);
+        // Auth::login($user);
 
         // return redirect(RouteServiceProvider::HOME);
         return redirect()->route('users.index')
