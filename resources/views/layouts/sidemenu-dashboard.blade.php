@@ -47,10 +47,12 @@
                     <div class="sb-nav-link-icon"><i class="fa-solid fa-bullhorn"></i></div>
                     Announcements
                 </a>
-                <a class="nav-link collapsed" href="{{ url('dashboard-users') }}" aria-expanded="false" aria-controls="collapseLayouts">
-                    <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
-                    Users
-                </a>
+                @can('isAdmin')
+                    <a class="nav-link collapsed" href="{{ url('dashboard-users') }}" aria-expanded="false" aria-controls="collapseLayouts">
+                        <div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
+                        Users
+                    </a>
+                @endcan
 
                 <div class="sb-sidenav-menu-heading">Addons</div>
                 <a class="nav-link" href="charts.html">

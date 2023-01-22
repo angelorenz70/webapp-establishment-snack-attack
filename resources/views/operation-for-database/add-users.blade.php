@@ -23,7 +23,7 @@
                                 <label for="email" :value="__('Email')"  class="text-dark">Email address</label>
                                 <x-input-error :messages="$errors->get('email')" class="mt-2" />
                             </div>
-
+                            
                             <!--Password-->
                             <div class="form-floating mb-3">
                                 <!--password-->

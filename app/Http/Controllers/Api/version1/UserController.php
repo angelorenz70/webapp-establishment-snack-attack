@@ -69,6 +69,7 @@ class UserController extends Controller
                 $name = 'required',
                 $email = 'required',
                 $password = 'required',
+                $role = 'required'
             ]);
 
             $user = new User();
@@ -76,7 +77,8 @@ class UserController extends Controller
             $user->name = $request->$name;
             $user->email = $request->$email;
             $user->password = $request->$password;
-            
+            $user->role = $request->$role;
+
             $user->save();
 
             return redirect()->route('users.index')
