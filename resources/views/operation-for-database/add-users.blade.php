@@ -3,9 +3,9 @@
 @section('content')
     <div id="layoutSidenav">
         @include('layouts.sidemenu-dashboard')
-        <div id="layoutSidenav_content">
-            <main>
-                <div class="card">
+        <div id="layoutSidenav_content" style="background-color: #edf2f4">
+            <main style="background-color: #edf2f4">
+                <div class="card" style="background-color: #edf2f4">
                     <div class="card-header"><b>ADD USER</b></div>
                     <div class="card-body">
                         <form  method="POST" action="{{ route('register') }}">
@@ -69,18 +69,6 @@
                     @endif
                 </div>
             </main>
-            <footer class="py-4 bg-light mt-auto">
-                <div class="container-fluid px-4">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2022</div>
-                        <div>
-                            <a href="#">Privacy Policy</a>
-                            &middot;
-                            <a href="#">Terms &amp; Conditions</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
     </div>
 @endsections

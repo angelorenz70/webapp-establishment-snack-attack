@@ -1,6 +1,9 @@
-<nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+<nav class="sb-topnav navbar navbar-expand navbar-dark" style="background-color: #370617">
     <!-- Navbar Brand-->
-    <a class="navbar-brand ps-3" href="index.html">Snack Attack</a>
+    <div class="container-fluid" style="position:relative; left:30px; object-fit: fill;">
+        <a class="navbar-brand ps-3" href="{{ url('dashboard') }}" >
+        <img style="width: 100%; max-width:50px;" src="{{ url('assets-homepage/assets/img/logos/logo.png') }}" alt="..." /></a>
+    </div>
     <!-- Sidebar Toggle-->
     <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
     <!-- Navbar Search-->

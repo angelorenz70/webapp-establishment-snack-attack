@@ -26,16 +26,18 @@
                                         <input v-model="formData.cellphone" type="text" class="form-control" name="subject" id="subject" placeholder="Cellphone">
                                     </div>
                                 </div>
-                                <div class="col-md-12" data-aos="fade-right" data-aos-delay="300">
-                                    <div class="form-group">
-                                        <label style="color: #FFBA08" class="label" for="#">Message</label>
-                                        <textarea v-model="formData.messages" name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                                <div data-aos="fade-right" data-aos-delay="300">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label style="color: #FFBA08" class="label" for="#">Message</label>
+                                            <textarea v-model="formData.messages" name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-12" data-aos="fade-right" data-aos-delay="350">
-                                    <div class="form-group">
-                                        <input type="submit" value="Send Message" class="btn btn-primary">
-                                        <div class="submitting"></div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="submit" value="Send Message" class="btn btn-primary">
+                                            <div class="submitting"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

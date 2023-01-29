@@ -8,8 +8,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                <div class="card-header"><h3 class="text-center font-weight-light my-4 text-dark" >Login</h3></div>
-                                <div class="card-body">
+                                <div class="card-header" style="background-color: #6A040F; color: #FFBA08"><h3 class="text-center font-weight-light my-4" >SNACK ATTACK</h3></div>
+                                <div class="card-body" style="background-color: #9D0208">
                                     <!-- Session Status -->
                                     <x-auth-session-status class="mb-4" :status="session('status')" />
                                     
@@ -39,13 +39,13 @@
                                         </div>
                                         <!--Forgot Password-->
                                         <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                            @if (Route::has('password.request'))
+                                            {{-- @if (Route::has('password.request'))
                                                 <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('password.request') }}">
                                                     {{ __('Forgot your password?') }}
                                                 </a>
-                                            @endif
+                                            @endif --}}
                                             <x-primary-button class="ml-3 btn-primary">
-                                                <span class="text-light">log in</span>
+                                                <span class="text-dark">log in</span>
                                             </x-primary-button>
                                         </div>
                                     </form>
