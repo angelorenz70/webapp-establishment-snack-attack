@@ -44,14 +44,15 @@
                                     <td>{{ $row->header }}</td>
                                     <td>{{ $row->sub_header }}</td>
                                     <td>
+                                        {{-- <img src="{{ asset('images/' . $row->image ) }}" width="100" alt="" class="image-thumbnail"> --}}
                                         <div>
                                             <!-- Menu button trigger modal -->
-                                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#viewimage" data-aos="fade-left" data-aos-delay="100">
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#viewimage{{$row->id}}">
                                                 VIEW
                                             </button>
                                         </div>
                                         <!-- Menu Modal -->
-                                        <div class="modal fade" id="viewimage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal fade" id="viewimage{{$row->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="container">
@@ -73,7 +74,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> 
                                     </td>
                                     <td>{{ $row->description }}</td>
                                     <td>{{ $row->user_id }}</td>
@@ -82,7 +83,7 @@
                                             @csrf
                                             @method('DELETE')
                                             <a href="{{ route('announcements.edit', $row->id) }}" class="btn btn-primary btn-sm">UPDATE</a>
-                                            <input type="submit" class="btn btn-danger btn-sm" value="DELETE">
+                                            <input type="submit" onclick="return confirm('Are you sure you want to delete the announcement?');" class="btn btn-danger btn-sm" value="DELETE">
                                         </form>
                                     </td>
                                 </tr>

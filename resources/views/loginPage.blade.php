@@ -8,7 +8,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-5">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                <div class="card-header" style="background-color: #6A040F; color: #FFBA08"><h3 class="text-center font-weight-light my-4" >SNACK ATTACK</h3></div>
+                                <div class="card-header" style="background-color: #6A040F; text-align:center"><img style="width: 100px;height: 70px" src="{{ url('assets-homepage/assets/img/logos/logo.png') }}" alt="..." /></a></div>
                                 <div class="card-body" style="background-color: #9D0208">
                                     <!-- Session Status -->
                                     <x-auth-session-status class="mb-4" :status="session('status')" />
@@ -19,7 +19,7 @@
                                         <div class="form-floating mb-3">
                                             <input id="email" class="form-control" type="email" name="email" :value="old('email')" required autofocus/>
                                             <label for="email" class="text-dark" :value="__('Email')">Email address</label>
-                                            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+                                            <x-input-error :messages="$errors->get('email')" class="mt-2 text-light" />
                                         </div>
                                         <!--Password-->
                                         <div class="form-floating mb-3">
@@ -28,7 +28,7 @@
                                                     name="password"
                                                     required autocomplete="current-password" />
                                             <label for="password" :value="__('Password')" class="text-dark">Password</label>
-                                            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+                                            <x-input-error :messages="$errors->get('password')" class="mt-2 text-light" />
                                         </div>
                                         <!--Remember Password-->
                                         <div class="form-check mb-3">

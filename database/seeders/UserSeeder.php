@@ -27,8 +27,8 @@ class UserSeeder extends Seeder
         //     ->create();
 
         User::factory()
-            ->count(10)
-            ->hasAnnouncements(6)
+            ->count(2)
+            ->hasAnnouncements(1)
             ->create();
 
 

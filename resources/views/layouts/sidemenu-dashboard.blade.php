@@ -9,7 +9,7 @@
                 </a>
                 <div class="sb-sidenav-menu-heading" style="color: #FFBA08">Interface</div>
                 <a class="nav-link collapsed" href="{{ url(' ') }}" target="_blank" style="color: #fae0e4" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                    <div class="sb-nav-link-icon"><i class="fa-solid fa-house-window"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa-solid fa-right-to-bracket"></i></div>
                     Homepage
                 </a>
                 <a class="nav-link collapsed" href="{{ url('dashboard-announcements') }}" style="color: #fae0e4" aria-expanded="false" aria-controls="collapseLayouts">

@@ -12,13 +12,13 @@
                             @csrf
                             @method('PUT')
                             <div class="row mb-3">
-                                <label class="col-sm-2 col-label-form">Header Name</label>
+                                <label class="col-sm-2 col-label-form">Header</label>
                                 <div class="col-sm-10">
                                     <input type="text" name="header" class="form-control" value="{{ $announcement->header }}">
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label class="col-sm-2 col-label-form">Sub-Header Name</label>
+                                <label class="col-sm-2 col-label-form">Sub-Header</label>
                                 <div class="col-sm-10">
                                     <input type="text" name="sub_header" class="form-control" value="{{ $announcement->sub_header }}">
                                 </div>
@@ -29,17 +29,17 @@
                                     <input type="text" name="description" class="form-control" value="{{ $announcement->description }}" >
                                 </div>
                             </div>
-                            <div class="row mb-3">
-                                <label class="col-sm-2 col-label-form">User_id</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="user_id" class="form-control" value="{{ $announcement->user_id }}">
-                                </div>
+                            @php
+                                    $user = Auth::user(); 
+                            @endphp
+                            <div>
+                                <input type="hidden" name="user_id" class="form-control" value="{{ $user->id }}">
                             </div>
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-label-form">Image</label>
                                 <div class="col-sm-10">
                                     <input type="file" name="image" class="form-control">
-                                    <img src="{{ asset('images/' . $announcement->image ) }}" width="100" alt="" class="image-thumbnail">
+                                    <img src="{{ asset('images/' . $announcement->image ) }}" width="100" alt="" class="img-thumbnail">
                                     <input type="hidden" name="hidden_image" value="{{ $announcement->image }}">
                                 </div>
                             </div>

@@ -11,13 +11,13 @@
                         <form method="post" action="{{ route('announcements.store') }}" enctype="multipart/form-data">
                             @csrf
                             <div class="row mb-3">
-                                <label class="col-sm-2 col-label-form">Header Name</label>
+                                <label class="col-sm-2 col-label-form">Header</label>
                                 <div class="col-sm-10">
                                     <input type="text" name="header" class="form-control">
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label class="col-sm-2 col-label-form">Sub-Header Name</label>
+                                <label class="col-sm-2 col-label-form">Sub-Header</label>
                                 <div class="col-sm-10">
                                     <input type="text" name="sub_header" class="form-control">
                                 </div>
@@ -28,11 +28,11 @@
                                     <input type="text" name="description" class="form-control">
                                 </div>
                             </div>
-                            <div class="row mb-3">
-                                <label class="col-sm-2 col-label-form">User_id</label>
-                                <div class="col-sm-10">
-                                    <input type="text" name="user_id" class="form-control">
-                                </div>
+                            @php
+                                    $user = Auth::user(); 
+                            @endphp
+                            <div>
+                                <input type="hidden" name="user_id" class="form-control" value="{{ $user->id }}">
                             </div>
                             <div class="row mb-3">
                                 <label class="col-sm-2 col-label-form">Image</label>

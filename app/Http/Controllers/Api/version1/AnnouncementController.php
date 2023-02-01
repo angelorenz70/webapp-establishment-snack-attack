@@ -106,7 +106,7 @@ class AnnouncementController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateAnnouncementRequest  $request
+     * @param  \App\Http\Requests\Request  $request
      * @param  \App\Models\Announcement  $announcement
      * @return \Illuminate\Http\Response
      */
@@ -115,18 +115,19 @@ class AnnouncementController extends Controller
         $request->validate([
             'header' => 'required',
             'sub_header' => 'required',
-            'image' => 'required|image|mimes:png,jpg,jpeg,svg,webp|max:2048|',
+            'image' => 'image|mimes:png,jpg,jpeg,svg,webp|max:2048|',
             'description' => 'required',
             'user_id' => 'required'
         ]);
 
+        
         $image = $request->hidden_image;
-
-        if($request->image != ' '){
+        if($request->image != ''){
             $image = time() . '.' . request()->image->getClientOriginalExtension();
             request()->image->move(public_path('images'), $image);
         }
 
+        
         $announcement = Announcement::find($request->hidden_id);
 
         $announcement->header = $request->header;

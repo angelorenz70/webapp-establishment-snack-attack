@@ -7,9 +7,12 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Dashboard</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{{ asset('assets-homepage/assets/business-icon.png')}}" />
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="{{ asset('assets-dashboard/css/styles.css') }}" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body class="sb-nav-fixed">
         @include('layouts.navbar-dashboard')
@@ -22,5 +25,9 @@
         <script src="{{ asset('assets-dashboard/assets/demo/chart-bar-demo.js')}}"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
         <script src="{{ asset('assets-dashboard/js/datatables-simple-demo.js')}}"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

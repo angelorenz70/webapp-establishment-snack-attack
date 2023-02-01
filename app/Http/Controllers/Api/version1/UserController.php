@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\Version1;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\Announcement;
 use App\Services\Version1\UserQuery;
 use App\Http\Resources\Version1\UserResource;
 use App\http\Resources\Version1\UserCollection;
@@ -130,9 +131,15 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        $user->delete();
-
-        return redirect()->route('users.index')
-        ->with('success', 'user deleted successfully!');
+        if($user->email == 'admin@example.com'){
+            return redirect()->route('users.index')
+            ->with('danger', 'Deleting the admin is not allowed!');
+        }else{
+            $deleted = DB::table('announcements')->where('user_id', '=', $user->id)->delete();
+            $user->delete();
+            return redirect()->route('users.index')
+            ->with('success', 'user deleted successfully!');
+        }
+        
     }
 }

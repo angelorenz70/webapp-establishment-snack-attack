@@ -14,7 +14,7 @@
                                     <h5>
                                         <div class="ps-5">
                                             <!-- Header display announcements-->
-                                            <div class="container p-1 mb-2" style="width: 10% height: 20%"><b>{{ $announcement->header }}</b></div>
+                                            <div class="container p-1 mb-2" style="width: 10% height: 20%"><h2><b>{{ $announcement->header }}</b></h2></div>
                                         </div>
                                     </h5>
                                     <h5>
