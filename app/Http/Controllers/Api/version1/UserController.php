@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\Version1;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use App\Models\Announcement;
 use App\Services\Version1\UserQuery;
 use App\Http\Resources\Version1\UserResource;
 use App\http\Resources\Version1\UserCollection;
@@ -46,6 +47,16 @@ class UserController extends Controller
         //
         
     //}
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('operation-for-database.add-users');
+    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -53,9 +64,26 @@ class UserController extends Controller
      * @param  \App\Http\Requests\StoreUserRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store()
-    {
-        //
+    public function store(Request $request)
+    {   
+            $request->validate([
+                $name = 'required',
+                $email = 'required',
+                $password = 'required',
+                $role = 'required'
+            ]);
+
+            $user = new User();
+
+            $user->name = $request->$name;
+            $user->email = $request->$email;
+            $user->password = $request->$password;
+            $user->role = $request->$role;
+
+            $user->save();
+
+            return redirect()->route('users.index')
+            ->with('success','new user added successfully!');
     }
 
     /**
@@ -75,10 +103,10 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
-    {
-        //
-    }
+    // public function edit(User $user)
+    // {
+    //     return view('operation-for-database.edit-users', compact('user'));
+    // }
 
 /**
      * Update the specified resource in storage.
@@ -89,11 +117,10 @@ class UserController extends Controller
      */
 
     
-    // public function update(UpdateUserRequest $request, User $user)
-    //{
-        //
+    // public function update(Request $request, User $user)
+    // {
         
-    //}
+    // }
 
     /**
      * Remove the specified resource from storage.
@@ -103,9 +130,15 @@ class UserController extends Controller
      */
     public function destroy(User $user)
     {
-        $user->delete();
-
-        return redirect()->route('users.index')
-        ->with('success', 'user deleted successfully!');
+        if($user->email == 'admin@example.com'){
+            return redirect()->route('users.index')
+            ->with('danger', 'Deleting the admin is not allowed!');
+        }else{
+            $deleted = DB::table('announcements')->where('user_id', '=', $user->id)->delete();
+            $user->delete();
+            return redirect()->route('users.index')
+            ->with('success', 'user deleted successfully!');
+        }
+        
     }
 }

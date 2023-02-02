@@ -1,9 +1,63 @@
 <!-- Contact-->
-<section class="page-section" id="contact">
-    <div class="container">
+<section class="page-section" id="contact" style="background-color: #03071E">
+    <div class="container-fluid">
+        <div class="container">
+            <h3 class="mb-4 text-center" data-aos="zoom-in" data-aos-delay="100" style="color: #FFBA08"><b>Contact Us</b></h3>
+            <div class="row no-gutters mb-5 g-5 py-0">
+                <div class="col-lg-7">
+                    <div class="contact-wrap w-100">
+                        <form id="contactForm" name="contactForm" class="contactForm" v-on:submit="sendMessage">
+                            <div class="row">
+                                <div class="col-md-6" data-aos="fade-right" data-aos-delay="150">
+                                    <label style="color: #FFBA08" class="label" for="name">Name</label>
+                                    <div class="form-group">
+                                        <input v-model="formData.name" type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6" data-aos="fade-right" data-aos-delay="200"> 
+                                    <div class="form-group">
+                                        <label style="color: #FFBA08" class="label" for="email">Email Address</label>
+                                        <input v-model="formData.email" type="email" class="form-control" name="email" id="email" placeholder="email address">
+                                    </div>
+                                </div>
+                                <div class="col-md-12" data-aos="fade-right" data-aos-delay="250">
+                                    <div class="form-group">
+                                        <label style="color: #FFBA08" class="label" for="subject">Cellphone</label>
+                                        <input v-model="formData.cellphone" type="text" class="form-control" name="subject" id="subject" placeholder="Cellphone">
+                                    </div>
+                                </div>
+                                <div data-aos="fade-right" data-aos-delay="300">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label style="color: #FFBA08" class="label" for="#">Message</label>
+                                            <textarea v-model="formData.messages" name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="submit" value="Send Message" class="btn btn-primary">
+                                            <div class="submitting"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 align-items-stretch pt-3">
+                    <div div class="container px-0 wow fadeIn" id="map" data-aos="fade-left" data-aos-delay="400">
+                        <iframe class="w-100 mb-n2" style="height: 450px;border:inset"
+                        src="https://maps.google.com/maps?q=Ampayon,%20snack%20attack&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase" data-aos="zoom-in" data-aos-delay="100">Contact Us</h2>
-            <h3 class="section-subheading text-muted" data-aos="fade-up" data-aos-delay="150">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h3 class="section-subheading text-muted" data-aos="fade-up" data-aos-delay="150">Have some question?</h3>
         </div>
         <!-- * * * * * * * * * * * * * * *-->
         <!-- * * SB Forms Contact Form * *-->
@@ -65,9 +119,9 @@
         </form>
     </div>
     <!-- Google Map Start -->
-<div div class="container pt-5 px-0 wow fadeIn" id="map" data-wow-delay="0.1s"  data-aos="fade-up" data-aos-delay="200">
-    <iframe class="w-100 mb-n2" style="height: 450px;"
-    src="https://maps.google.com/maps?q=Ampayon,%20snack%20attack&t=&z=13&ie=UTF8&iwloc=&output=embed"
-        frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-</div>
+    <div div class="container pt-5 px-0 wow fadeIn" id="map" data-wow-delay="0.1s"  data-aos="fade-up" data-aos-delay="200">
+        <iframe class="w-100 mb-n2" style="height: 450px;"
+        src="https://maps.google.com/maps?q=Ampayon,%20snack%20attack&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div> --}}
 </section>

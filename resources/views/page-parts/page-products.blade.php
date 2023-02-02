@@ -1,9 +1,9 @@
 <!-- Portfolio Grid-->
-<section class="page-section bg-light" id="portfolio">
+<section class="page-section" id="portfolio" style="background-color: #370617">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase" data-aos="zoom-in">Products</h2>
-            <h3 class="section-subheading text-muted" data-aos="fade-up" data-aos-delay="100">This are the Best Seller that we offer!</h3>
+            <h2 class="section-heading text-uppercase" data-aos="zoom-in" style="color: #ffba08">Products</h2>
+            <h3 class="section-subheading" style="color: #fae0e4" data-aos="fade-up" data-aos-delay="100">This are the Best Seller that we offer!</h3>
         </div>
         <div class="row">
             <div class="col-lg-4 col-sm-6 mb-4">
@@ -13,11 +13,11 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis1.jpg" alt="..." />
+                        <img class="img-fluid" style="border-style: inset;" src="assets-homepage/assets/img/portfolio/dis1.jpg" alt="..." />
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" data-aos="fade-up" data-aos-delay="200">Halo-halo</div>
-                        <div class="portfolio-caption-subheading text-muted" data-aos="fade-up" data-aos-delay="200">dessert</div>
+                    <div class="portfolio-caption" style="background-color: #6a040f">
+                        <div class="portfolio-caption-heading" style="color: #ffba08" data-aos="fade-up" data-aos-delay="200">Halo-halo</div>
+                        <div class="portfolio-caption-subheading" style="color: #fae0e4" data-aos="fade-up" data-aos-delay="200">dessert</div>
                     </div>
                 </div>
             </div>
@@ -28,11 +28,11 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis2.jpg" alt="..." />
+                        <img class="img-fluid" style="border-style: inset;" src="assets-homepage/assets/img/portfolio/dis2.jpg" alt="..." />
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" data-aos="fade-up" data-aos-delay="350">noodles</div>
-                        <div class="portfolio-caption-subheading text-muted" data-aos="fade-up" data-aos-delay="350">grains</div>
+                    <div class="portfolio-caption" style="background-color: #6a040f">
+                        <div class="portfolio-caption-heading" style="color: #ffba08" data-aos="fade-up" data-aos-delay="350">noodles</div>
+                        <div class="portfolio-caption-subheading" style="color: #fae0e4" data-aos="fade-up" data-aos-delay="350">grains</div>
                     </div>
                 </div>
             </div>
@@ -43,11 +43,11 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis3.jpg" alt="..." />
+                        <img class="img-fluid" style="border-style: inset;" src="assets-homepage/assets/img/portfolio/dis3.jpg" alt="..." />
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" data-aos="fade-up" data-aos-delay="500">Ham&Egg Sandwhich</div>
-                        <div class="portfolio-caption-subheading text-muted" data-aos="fade-up" data-aos-delay="500">bread</div>
+                    <div class="portfolio-caption" style="background-color: #6a040f">
+                        <div class="portfolio-caption-heading" style="color: #ffba08" data-aos="fade-up" data-aos-delay="500">Ham&Egg Sandwhich</div>
+                        <div class="portfolio-caption-subheading" style="color: #fae0e4" data-aos="fade-up" data-aos-delay="500">bread</div>
                     </div>
                 </div>
             </div>
@@ -58,11 +58,11 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis4.jpg" alt="..." />
+                        <img class="img-fluid" style="border-style: inset;" src="assets-homepage/assets/img/portfolio/dis4.jpg" alt="..." />
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" data-aos="fade-up" data-aos-delay="150"> <main>Milk Tea</main></div>
-                        <div class="portfolio-caption-subheading text-muted" data-aos="fade-up" data-aos-delay="150">drinks</div>
+                    <div class="portfolio-caption" style="background-color: #6a040f">
+                        <div class="portfolio-caption-heading" style="color: #ffba08" data-aos="fade-up" data-aos-delay="150"> <main>Milk Tea</main></div>
+                        <div class="portfolio-caption-subheading" style="color: #fae0e4" data-aos="fade-up" data-aos-delay="150">drinks</div>
                     </div>
                 </div>
             </div>
@@ -73,11 +73,11 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis5.jpg" alt="..." />
+                        <img class="img-fluid" style="border-style: inset;" src="assets-homepage/assets/img/portfolio/dis5.jpg" alt="..." />
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" data-aos="fade-up" data-aos-delay="300">Pizza</div>
-                        <div class="portfolio-caption-subheading text-muted" data-aos="fade-up" data-aos-delay="300">bread</div>
+                    <div class="portfolio-caption" style="background-color: #6a040f">
+                        <div class="portfolio-caption-heading" style="color: #ffba08" data-aos="fade-up" data-aos-delay="300">Pizza</div>
+                        <div class="portfolio-caption-subheading" style="color: #fae0e4" data-aos="fade-up" data-aos-delay="300">bread</div>
                     </div>
                 </div>
             </div>
@@ -88,11 +88,11 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
-                        <img class="img-fluid" src="assets-homepage/assets/img/portfolio/dis6.jpg" alt="..." />
+                        <img class="img-fluid" style="border-style: inset;" src="assets-homepage/assets/img/portfolio/dis6.jpg" alt="..." />
                     </a>
-                    <div class="portfolio-caption">
-                        <div class="portfolio-caption-heading" data-aos="fade-up" data-aos-delay="450">Mango Graham</div>
-                        <div class="portfolio-caption-subheading text-muted" data-aos="fade-up" data-aos-delay="450">dessert</div>
+                    <div class="portfolio-caption" style="background-color: #6a040f">
+                        <div class="portfolio-caption-heading" style="color: #ffba08" data-aos="fade-up" data-aos-delay="450">Mango Graham</div>
+                        <div class="portfolio-caption-subheading" style="color: #fae0e4" data-aos="fade-up" data-aos-delay="450">dessert</div>
                     </div>
                 </div>
             </div>
@@ -157,10 +157,12 @@
                                              Dessert
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        CLOSE PRODUCT
-                                    </button>
+                                    <div style="text-align:center">
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-xmark me-1"></i>
+                                            CLOSE PRODUCT
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -18,7 +18,9 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body id="page-top">
-        @yield('content')
+        <div id="app">
+            @yield('content')
+        </div>
     
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -34,5 +36,10 @@
     <script>
         AOS.init();
     </script>
+    @if (url()->current() == url('')) 
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js" integrity="sha512-L4lHq2JI/GoKsERT8KYa72iCwfSrKYWEyaBxzJeeITM9Lub5vlTj8tufqYk056exhjo2QDEipJrg6zen/DDtoQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="{{ asset('assets-homepage/js/sendMessage.js') }}"></script>
+    @endif
 </body>
 </html>

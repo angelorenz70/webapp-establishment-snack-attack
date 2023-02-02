@@ -4,6 +4,7 @@ use App\Http\Controllers\Api\Version1\AnnouncementController;
 use App\Http\Controllers\Api\Version1\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ Route::group(['prefix' => 'version1', 'namespace' => 'App\Http\Controllers\Api\V
     Route::apiResource('users', UserController::class);
     Route::apiResource('announcements', AnnouncementController::class);
 });
+
+Route::post('contacts', [ContactController::class, 'store']);

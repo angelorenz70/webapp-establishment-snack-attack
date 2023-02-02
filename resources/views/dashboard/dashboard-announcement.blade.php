@@ -4,24 +4,24 @@
     <div id="layoutSidenav">
         @include('layouts.sidemenu-dashboard')
         <div id="layoutSidenav_content">
-            <main>
+            <main style="background-color: #edf2f4">
                 @if ($message = Session::get('success'))
                     <div class="alert alert-success">{{ $message }}</div>                    
                 @endif
-                <div class="card mb-4">
+                <div class="card mb-4" style="background-color: #edf2f4">
                     <div class="card-header">
                         <i class="fas fa-table me-1"></i>
                         <b>Annoucements table</b>
                         <div class="col">
-                            <a href="{{ url('dashboard-announcements/add-announcement') }}" class="btn btn-success btn-sm float-end">ADD</a>
+                            <a href="{{ route('announcements.create') }}" class="btn btn-success btn-sm float-end">ADD ANNOUNCEMENT</a>
                         </div>
                     </div>
                     <div class="card-body">
                         <table id="datatablesSimple">
                             <thead>
                                 <tr>
-                                    <th>Head Name</th>
-                                    <th>Sub-Header Name</th>
+                                    <th>Header</th>
+                                    <th>Sub-Header</th>
                                     <th>Image</th>
                                     <th>Description</th>
                                     <th>User-id</th>
@@ -43,7 +43,39 @@
                                 <tr>
                                     <td>{{ $row->header }}</td>
                                     <td>{{ $row->sub_header }}</td>
-                                    <td>{{ $row->image }}</td>
+                                    <td>
+                                        {{-- <img src="{{ asset('images/' . $row->image ) }}" width="100" alt="" class="image-thumbnail"> --}}
+                                        <div>
+                                            <!-- Menu button trigger modal -->
+                                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#viewimage{{$row->id}}">
+                                                VIEW
+                                            </button>
+                                        </div>
+                                        <!-- Menu Modal -->
+                                        <div class="modal fade" id="viewimage{{$row->id}}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="container">
+                                                        <div class="row justify-content-center">
+                                                            <div class="modal-body">
+                                                                <!-- Project details-->
+                                                                <h3 class="text-uppercase">SNACK ATTACK</h3>
+                                                                <img class="img-fluid border border-warnin d-block mx-auto" src="{{ asset('images/' . $row->image) }}" alt="..." />
+                                                                <ul class="list-inline">
+                                                                    <li>
+                                                                    </li>
+                                                                </ul>
+                                                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                                                    <i class="fas fa-xmark me-1"></i>
+                                                                    CLOSE IMAGE
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                    </td>
                                     <td>{{ $row->description }}</td>
                                     <td>{{ $row->user_id }}</td>
                                     <td>
@@ -51,7 +83,7 @@
                                             @csrf
                                             @method('DELETE')
                                             <a href="{{ route('announcements.edit', $row->id) }}" class="btn btn-primary btn-sm">UPDATE</a>
-                                            <input type="submit" class="btn btn-danger btn-sm" value="DELETE">
+                                            <input type="submit" onclick="return confirm('Are you sure you want to delete the announcement?');" class="btn btn-danger btn-sm" value="DELETE">
                                         </form>
                                     </td>
                                 </tr>
@@ -61,18 +93,6 @@
                     </div>
                 </div>
             </main>
-            <footer class="py-4 bg-light mt-auto">
-                <div class="container-fluid px-4">
-                    <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2022</div>
-                        <div>
-                            <a href="#">Privacy Policy</a>
-                            &middot;
-                            <a href="#">Terms &amp; Conditions</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
     </div>
 @endsection
