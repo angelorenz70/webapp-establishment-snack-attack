@@ -157,10 +157,12 @@
                                              Dessert
                                         </li>
                                     </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        CLOSE PRODUCT
-                                    </button>
+                                    <div style="text-align:center">
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-xmark me-1"></i>
+                                            CLOSE PRODUCT
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

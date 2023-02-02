@@ -1,11 +1,11 @@
 @extends('layouts.landingPage')
  
 @section('content')
-    <body style="background:url('assets-homepage/assets/img/header-bg2.jpg'); background-repeat:no-repeat; background-size:cover">
+    <body style="background:url('assets-homepage/assets/img/header-bg3.jpg'); background-repeat:no-repeat; background-size:cover">
         <div id="layoutAuthentication_content">
             <main>
                 <div class="container pt-5">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center" style="margin-top: 50px;  opacity: 1;">
                         <div class="col-lg-5">
                             <div class="card shadow-lg border-0 rounded-lg mt-5">
                                 <div class="card-header" style="background-color: #6A040F; text-align:center"><img style="width: 100px;height: 70px" src="{{ url('assets-homepage/assets/img/logos/logo.png') }}" alt="..." /></a></div>
